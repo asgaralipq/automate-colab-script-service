@@ -1,6 +1,8 @@
 import time
 import os
-import pyinotify,subprocess
+# import sys
+# print(sys.path)
+# import pyinotify,subprocess
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -50,8 +52,8 @@ print("Waiting....")
 # notifier.loop()
 # os.kill(os.getpid(),signal.SIGINT)
 
-time_to_wait = 10
-time_counter = 0
+# time_to_wait = 10
+# time_counter = 0
 while not os.path.isfile('/home/asgaralipq/Work/Colab-Script/Downloads/copy.txt'):
     time.sleep(1)
 
