@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.firefox.options import Options
 
+
 # options = Options()
 # options.headless = True
 # options = webdriver.ChromeOptions()
@@ -20,8 +21,7 @@ from selenium.webdriver.firefox.options import Options
 # wd = webdriver.Chrome(options=options)
 fp = webdriver.FirefoxProfile('/home/asgaralipq/.mozilla/firefox/0zhbal6h.default-release')
 wd = webdriver.Firefox(fp)
-# wd.get("https://colab.research.google.com/drive/1PIybc8oaszBcVeAPVQyAl-90jYDDMhWp")
-wd.get("https://colab.research.google.com/drive/whatever")
+wd.get("https://colab.research.google.com/drive/1PIybc8oaszBcVeAPVQyAl-90jYDDMhWp")
 print(wd.title)  
 print("Page loaded")
 
@@ -31,9 +31,9 @@ wd.find_element_by_id('runtime-menu-button').click()
 wd.find_element_by_id(':1v').click()
 print("Running colab...")
 
-wm = pyinotify.WatchManager()
-wm.add_watch('/home/asgaralipq/Work/Colab-Script/Downloads/', pyinotify.ALL_EVENTS)
-notifier = pyinotify.Notifier(wm)
+# wm = pyinotify.WatchManager()
+# wm.add_watch('/home/asgaralipq/Work/Colab-Script/Downloads/', pyinotify.ALL_EVENTS)
+# notifier = pyinotify.Notifier(wm)
 
 time.sleep(3)
 
@@ -46,11 +46,17 @@ time.sleep(3)
 #     notifier.loop()
 
 print("Waiting....")
-notifier.loop()
-os.kill(os.getpid(),signal.SIGINT)
+
+# notifier.loop()
+# os.kill(os.getpid(),signal.SIGINT)
+
+time_to_wait = 10
+time_counter = 0
+while not os.path.isfile('/home/asgaralipq/Work/Colab-Script/Downloads/copy.txt'):
+    time.sleep(1)
 
 print("Done")
-notifier.stop()
+# notifier.stop()
 
 time.sleep(5)
 
