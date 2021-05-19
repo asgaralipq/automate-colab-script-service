@@ -16,7 +16,7 @@ Sample run on a Colab Project which creates a .txt file:
 
 <p align="center"><img src="https://imgur.com/ukvOU0B.gif"></p>
 
-Creating and starting a systemd servive for the .sh script so it can get executed automatically:
+Creating and starting a systemd servive for the .sh script so it gets executed automatically:
 
 <p align="center"><img src="https://imgur.com/L2PFh3C.png"></p>
 
