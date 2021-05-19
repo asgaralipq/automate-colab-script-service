@@ -1,0 +1,16 @@
+[Unit]
+Description=Service to automate my google colab project.
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/automate.sh
+WorkingDirectory=/home/asgaralipq/Work/Colab-Script/
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
