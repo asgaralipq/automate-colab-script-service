@@ -37,7 +37,7 @@ print("Running colab...")
 # wm.add_watch('/home/asgaralipq/Work/Colab-Script/Downloads/', pyinotify.ALL_EVENTS)
 # notifier = pyinotify.Notifier(wm)
 
-time.sleep(3)
+# time.sleep(3)
 
 # if notifier.check_events():
 #     time.sleep(3)
@@ -47,7 +47,7 @@ time.sleep(3)
 #     time.sleep(3)
 #     notifier.loop()
 
-print("Waiting....")
+print("Waiting for task to complete...")
 
 # notifier.loop()
 # os.kill(os.getpid(),signal.SIGINT)
@@ -57,10 +57,12 @@ print("Waiting....")
 while not os.path.isfile('/home/asgaralipq/Work/Colab-Script/Downloads/copy.txt'):
     time.sleep(1)
 
-print("Done")
+print("Task completed")
 # notifier.stop()
 
 time.sleep(5)
+
+print("Closing Driver...")
 
 wd.quit()
 
