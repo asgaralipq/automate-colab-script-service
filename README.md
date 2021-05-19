@@ -10,7 +10,7 @@ Steps the script performs:
 3. Wait until the required artifact is downloaded.
 4. After download, close the web driver.
 5. Tag the downloaded artifact with Date and Time. 
-6. Move the artifact to required directory which is your datastore.
+6. Move the artifact to required directory wherever your datastore is.
 
 Sample run on a Colab Project which creates a .txt file:
 
