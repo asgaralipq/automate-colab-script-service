@@ -1,0 +1,12 @@
+[Unit]
+Description=Timer for automate-colab.service
+Requires=automate-colab.service
+
+[Timer]
+Unit=automate-colab.service
+OnBootSec=15min
+OnCalendar=*-*-* 04:07:30
+Persistent=true
+
+[Install]
+WantedBy=timers.target

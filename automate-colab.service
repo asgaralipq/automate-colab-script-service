@@ -9,7 +9,5 @@ WantedBy=multi-user.target
 Type=simple
 ExecStart=/usr/sbin/automate.sh
 WorkingDirectory=/home/asgaralipq/Work/Colab-Script/
-Restart=always
-RestartSec=10
 StandardOutput=journal
 StandardError=journal
