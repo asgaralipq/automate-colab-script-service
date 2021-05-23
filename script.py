@@ -14,7 +14,7 @@ print("Page loaded")
 
 wd.implicitly_wait(10)
 wd.find_element_by_id('runtime-menu-button').click()
-wd.find_element_by_id(':1v').click()
+wd.find_element_by_id(':1w').click()
 
 print("Running colab...")
 print("Waiting for task to complete...")
