@@ -20,7 +20,7 @@ A service and a script to run a Google Colab file in headless mode in the backgr
 
 <p align="center"><img src="https://imgur.com/NgT8RRH.gif"></p>
 
-## Creating and starting a systemd servive for the .sh script so it gets executed automatically:
+## Creating and starting a systemd service for the .sh script so it gets executed automatically:
 
 <p align="center"><img src="https://imgur.com/L2PFh3C.png"></p>
 
